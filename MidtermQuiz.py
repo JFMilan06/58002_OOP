@@ -1,19 +1,19 @@
 class TempConversion():
   def __init__(self, temp):
-    self.temp = temp
+    self.__temp = temp
 
   def FtoC(self):
-    return (self.temp-32)*5/9
+    return (self.__temp-32)*5/9
   def KtoC(self):
-    return self.temp-273.15
+    return self.__temp-273.15
   def CtoF(self):
-    return (self.temp*9/5)+32
+    return (self.__temp*9/5)+32
   def KtoF(self):
-    return ((1.8*self.temp)-459.67)
+    return ((1.8*self.__temp)-459.67)
   def CtoK(self):
-    return self.temp+273.15
+    return self.__temp+273.15
   def FtoK(self):
-    return ((self.temp+459.67)/1.8)
+    return ((self.__temp+459.67)/1.8)
 
 
 temp = int(input("input temperature:"))
